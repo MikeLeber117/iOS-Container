@@ -10,9 +10,9 @@
 // 3. Need another class to create all configs, e.g. something that is initialized with a key -> fileNameInBundle or something that can return all F2AppViewConfiguration via view identifier key for each view
 // 4. Ultimately, this needs to be passed to F2 via the following. http://<manifestURL>/json?params=[<self>]  // self needs to be wrapped into an array
 #import <Foundation/Foundation.h>
+#import <Mantle/Mantle.h>
 
-
-@interface F2AppViewConfiguration : NSObject
+@interface F2AppViewConfiguration : MTLModel
 @property (nonatomic, copy) NSString *appID;
 @property (nonatomic, copy) NSURL *manifestURL;
 @property (nonatomic, copy) NSString *appName;

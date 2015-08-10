@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		28AD1ACF1B793D04002AE674 /* F2AppViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */; };
+		28AD1AD21B794EBB002AE674 /* QuoteAppConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 28AD1AD11B794EBB002AE674 /* QuoteAppConfiguration.json */; };
+		28AD1AD41B794F90002AE674 /* WatchlistAppConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 28AD1AD31B794F90002AE674 /* WatchlistAppConfiguration.json */; };
+		28AD1AD61B795026002AE674 /* OneYearChartAppConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 28AD1AD51B795026002AE674 /* OneYearChartAppConfiguration.json */; };
+		28AD1AD81B795063002AE674 /* StockNewsAppConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 28AD1AD71B795063002AE674 /* StockNewsAppConfiguration.json */; };
+		28AD1ADB1B7950F1002AE674 /* F2AppViewConfigurationLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD1ADA1B7950F1002AE674 /* F2AppViewConfigurationLoader.m */; };
 		56E048B132725C6602E9746C /* libPods-F2 Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860ECEA89C4C77D011D94FD /* libPods-F2 Demo.a */; };
 		7E2CC3F318E1DA8F00697868 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F218E1DA8F00697868 /* Foundation.framework */; };
 		7E2CC3F518E1DA8F00697868 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F418E1DA8F00697868 /* CoreGraphics.framework */; };
@@ -39,6 +44,12 @@
 		1860ECEA89C4C77D011D94FD /* libPods-F2 Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-F2 Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD1ACD1B793D04002AE674 /* F2AppViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F2AppViewConfiguration.h; path = F2AppView/F2AppViewConfiguration.h; sourceTree = SOURCE_ROOT; };
 		28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F2AppViewConfiguration.m; path = F2AppView/F2AppViewConfiguration.m; sourceTree = SOURCE_ROOT; };
+		28AD1AD11B794EBB002AE674 /* QuoteAppConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = QuoteAppConfiguration.json; path = "Supporting Files/QuoteAppConfiguration.json"; sourceTree = "<group>"; };
+		28AD1AD31B794F90002AE674 /* WatchlistAppConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = WatchlistAppConfiguration.json; path = "Supporting Files/WatchlistAppConfiguration.json"; sourceTree = "<group>"; };
+		28AD1AD51B795026002AE674 /* OneYearChartAppConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = OneYearChartAppConfiguration.json; path = "Supporting Files/OneYearChartAppConfiguration.json"; sourceTree = "<group>"; };
+		28AD1AD71B795063002AE674 /* StockNewsAppConfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = StockNewsAppConfiguration.json; path = "Supporting Files/StockNewsAppConfiguration.json"; sourceTree = "<group>"; };
+		28AD1AD91B7950F1002AE674 /* F2AppViewConfigurationLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F2AppViewConfigurationLoader.h; path = F2AppView/F2AppViewConfigurationLoader.h; sourceTree = SOURCE_ROOT; };
+		28AD1ADA1B7950F1002AE674 /* F2AppViewConfigurationLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F2AppViewConfigurationLoader.m; path = F2AppView/F2AppViewConfigurationLoader.m; sourceTree = SOURCE_ROOT; };
 		7E2CC3EF18E1DA8F00697868 /* F2 Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F2 Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2CC3F218E1DA8F00697868 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E2CC3F418E1DA8F00697868 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,8 +104,21 @@
 			children = (
 				28AD1ACD1B793D04002AE674 /* F2AppViewConfiguration.h */,
 				28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */,
+				28AD1AD91B7950F1002AE674 /* F2AppViewConfigurationLoader.h */,
+				28AD1ADA1B7950F1002AE674 /* F2AppViewConfigurationLoader.m */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		28AD1AD01B794E54002AE674 /* JSON Configuration Files */ = {
+			isa = PBXGroup;
+			children = (
+				28AD1AD11B794EBB002AE674 /* QuoteAppConfiguration.json */,
+				28AD1AD31B794F90002AE674 /* WatchlistAppConfiguration.json */,
+				28AD1AD51B795026002AE674 /* OneYearChartAppConfiguration.json */,
+				28AD1AD71B795063002AE674 /* StockNewsAppConfiguration.json */,
+			);
+			name = "JSON Configuration Files";
 			sourceTree = "<group>";
 		};
 		7E2CC3E618E1DA8F00697868 = {
@@ -146,6 +170,7 @@
 		7E2CC3F918E1DA8F00697868 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28AD1AD01B794E54002AE674 /* JSON Configuration Files */,
 				7E2CC3FA18E1DA8F00697868 /* F2 Demo-Info.plist */,
 				7E2CC3FB18E1DA8F00697868 /* InfoPlist.strings */,
 				7E2CC3FE18E1DA8F00697868 /* main.m */,
@@ -268,8 +293,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AD1AD81B795063002AE674 /* StockNewsAppConfiguration.json in Resources */,
 				7E2CC3FD18E1DA8F00697868 /* InfoPlist.strings in Resources */,
 				7E2CC40518E1DA8F00697868 /* Images.xcassets in Resources */,
+				28AD1AD61B795026002AE674 /* OneYearChartAppConfiguration.json in Resources */,
+				28AD1AD41B794F90002AE674 /* WatchlistAppConfiguration.json in Resources */,
+				28AD1AD21B794EBB002AE674 /* QuoteAppConfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AD1ADB1B7950F1002AE674 /* F2AppViewConfigurationLoader.m in Sources */,
 				7E2CC40318E1DA8F00697868 /* AppDelegate.m in Sources */,
 				7E2CC46618E1DCD200697868 /* MainViewController.m in Sources */,
 				28AD1ACF1B793D04002AE674 /* F2AppViewConfiguration.m in Sources */,
