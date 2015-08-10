@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28AD1ACF1B793D04002AE674 /* F2AppViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */; };
+		56E048B132725C6602E9746C /* libPods-F2 Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860ECEA89C4C77D011D94FD /* libPods-F2 Demo.a */; };
 		7E2CC3F318E1DA8F00697868 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F218E1DA8F00697868 /* Foundation.framework */; };
 		7E2CC3F518E1DA8F00697868 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F418E1DA8F00697868 /* CoreGraphics.framework */; };
 		7E2CC3F718E1DA8F00697868 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F618E1DA8F00697868 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1860ECEA89C4C77D011D94FD /* libPods-F2 Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-F2 Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AD1ACD1B793D04002AE674 /* F2AppViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F2AppViewConfiguration.h; path = F2AppView/F2AppViewConfiguration.h; sourceTree = SOURCE_ROOT; };
 		28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F2AppViewConfiguration.m; path = F2AppView/F2AppViewConfiguration.m; sourceTree = SOURCE_ROOT; };
 		7E2CC3EF18E1DA8F00697868 /* F2 Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F2 Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,8 @@
 		7E2CC46518E1DCD200697868 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		7E2CC46718E1DD2D00697868 /* F2AppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F2AppView.h; path = ../F2AppView/F2AppView.h; sourceTree = "<group>"; };
 		7E2CC46818E1DD2D00697868 /* F2AppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F2AppView.m; path = ../F2AppView/F2AppView.m; sourceTree = "<group>"; };
+		B8DD866701247EB8CED7211D /* Pods-F2 Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-F2 Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-F2 Demo/Pods-F2 Demo.release.xcconfig"; sourceTree = "<group>"; };
+		D0E070E275DAB82B8C6B0A9C /* Pods-F2 Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-F2 Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-F2 Demo/Pods-F2 Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 				7E2CC3F518E1DA8F00697868 /* CoreGraphics.framework in Frameworks */,
 				7E2CC3F718E1DA8F00697868 /* UIKit.framework in Frameworks */,
 				7E2CC3F318E1DA8F00697868 /* Foundation.framework in Frameworks */,
+				56E048B132725C6602E9746C /* libPods-F2 Demo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,7 @@
 				7E2CC41118E1DA9000697868 /* F2 DemoTests */,
 				7E2CC3F118E1DA8F00697868 /* Frameworks */,
 				7E2CC3F018E1DA8F00697868 /* Products */,
+				EB31926F2711941393911FAE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +124,7 @@
 				7E2CC3F418E1DA8F00697868 /* CoreGraphics.framework */,
 				7E2CC3F618E1DA8F00697868 /* UIKit.framework */,
 				7E2CC40B18E1DA9000697868 /* XCTest.framework */,
+				1860ECEA89C4C77D011D94FD /* libPods-F2 Demo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,6 +182,15 @@
 			name = F2AppView;
 			sourceTree = "<group>";
 		};
+		EB31926F2711941393911FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0E070E275DAB82B8C6B0A9C /* Pods-F2 Demo.debug.xcconfig */,
+				B8DD866701247EB8CED7211D /* Pods-F2 Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E2CC41B18E1DA9000697868 /* Build configuration list for PBXNativeTarget "F2 Demo" */;
 			buildPhases = (
+				ED82C3DA7FDBA5A5FC7264B7 /* Check Pods Manifest.lock */,
 				7E2CC3EB18E1DA8F00697868 /* Sources */,
 				7E2CC3EC18E1DA8F00697868 /* Frameworks */,
 				7E2CC3ED18E1DA8F00697868 /* Resources */,
+				AAA0BE72BD22FB1D4F1687DE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +282,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AAA0BE72BD22FB1D4F1687DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-F2 Demo/Pods-F2 Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED82C3DA7FDBA5A5FC7264B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E2CC3EB18E1DA8F00697868 /* Sources */ = {
@@ -390,6 +441,7 @@
 		};
 		7E2CC41C18E1DA9000697868 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E070E275DAB82B8C6B0A9C /* Pods-F2 Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -403,6 +455,7 @@
 		};
 		7E2CC41D18E1DA9000697868 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD866701247EB8CED7211D /* Pods-F2 Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

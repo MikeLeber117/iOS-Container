@@ -1,7 +1,46 @@
+# OS X
 .DS_Store
-xcschememanagement.plist
-UserInterfaceState.xcuserstate
-F2 Demo.xcscheme
-F2 Demo.xccheckout
-DerivedData/
-F2 Demo.xcodeproj/xcuserdata/
+*/.DS_Store
+
+# Xcode
+*.swp
+*~.nib
+*.pbxuser
+*.perspective
+*.perspectivev3
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+profile
+*.moved-aside
+.idea/
+*.hmap
+
+# XCWorkSpace
+*.xccheckout
+*.xcscmblueprint
+xcuserdata
+
+# Xcode Project
+*.xcodeproj/xcuserdata/*.xcuserdatad
+*.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
+*/*.xcodeproj/xcuserdata/*.xcuserdatad
+*/*.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad
+
+# Documentation Related
+Documentation/Generated
+doxygenWarnings.txt
+
+# CocoaPods - Optionally you may want to include or not include the Pods directory.
+Pods/
+
+# Products and Build Related
+build
+Executables/*
+*/build/*
+*/Executables/*
+DerivedData
