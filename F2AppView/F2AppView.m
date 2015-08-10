@@ -87,11 +87,7 @@
         }
         
         //if "name" exists in configuration, we keep it in our ivar
-        if (_appConfig[@"name"]) {
-            _appName = _appConfig[@"name"];
-        }else{
-            _appName = NULL;
-        }
+        _appName = _appConfig[@"name"];
     }
     return error;
 }
