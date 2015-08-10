@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28AD1ACF1B793D04002AE674 /* F2AppViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */; };
 		7E2CC3F318E1DA8F00697868 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F218E1DA8F00697868 /* Foundation.framework */; };
 		7E2CC3F518E1DA8F00697868 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F418E1DA8F00697868 /* CoreGraphics.framework */; };
 		7E2CC3F718E1DA8F00697868 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2CC3F618E1DA8F00697868 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28AD1ACD1B793D04002AE674 /* F2AppViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = F2AppViewConfiguration.h; path = F2AppView/F2AppViewConfiguration.h; sourceTree = SOURCE_ROOT; };
+		28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = F2AppViewConfiguration.m; path = F2AppView/F2AppViewConfiguration.m; sourceTree = SOURCE_ROOT; };
 		7E2CC3EF18E1DA8F00697868 /* F2 Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "F2 Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2CC3F218E1DA8F00697868 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E2CC3F418E1DA8F00697868 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28AD1ACC1B793CDF002AE674 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				28AD1ACD1B793D04002AE674 /* F2AppViewConfiguration.h */,
+				28AD1ACE1B793D04002AE674 /* F2AppViewConfiguration.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 		7E2CC3E618E1DA8F00697868 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +168,7 @@
 		7E5709C718E496810028E67A /* F2AppView */ = {
 			isa = PBXGroup;
 			children = (
+				28AD1ACC1B793CDF002AE674 /* Config */,
 				7E2CC46718E1DD2D00697868 /* F2AppView.h */,
 				7E2CC46818E1DD2D00697868 /* F2AppView.m */,
 			);
@@ -259,6 +272,7 @@
 			files = (
 				7E2CC40318E1DA8F00697868 /* AppDelegate.m in Sources */,
 				7E2CC46618E1DCD200697868 /* MainViewController.m in Sources */,
+				28AD1ACF1B793D04002AE674 /* F2AppViewConfiguration.m in Sources */,
 				7E2CC46918E1DD2D00697868 /* F2AppView.m in Sources */,
 				7E2CC3FF18E1DA8F00697868 /* main.m in Sources */,
 			);
